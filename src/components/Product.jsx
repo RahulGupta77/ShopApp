@@ -22,6 +22,7 @@ const Product = ({ post }) => {
       className="flex flex-col items-center justify-between
     md:hover:scale-110 transition duration-300 ease-in shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] gap-3 p-4 mt-10 ml-5 rounded-xl
     hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] group
+    max-[600px]:mt-32
     "
     >
       <div>

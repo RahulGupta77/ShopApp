@@ -14,7 +14,7 @@ const CartItem = ({ item }) => {
 
 
   return (
-    <div className="flex items-center p-2 md:p-5 justify-between   mt-2 mb-2 md:mx-5  border-b-2 border-[#0f172a]">
+    <div className="flex items-center p-2  md:p-5 justify-between   mt-2 mb-2 md:mx-5  border-b-2 border-[#0f172a]">
       <div className="flex flex-col md:flex-row p-0 md:p-3 gap-5 items-center">
         <div className="w-[30%]">
           <img className="object-cover " src={item.image} alt="" />

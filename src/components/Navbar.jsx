@@ -16,7 +16,7 @@ const Navbar = () => {
       >
         <NavLink to="/">
           <div>
-            <img src="../logo.png" alt="logo" className="h-20 py-1" />
+            <img src="./logo.png" alt="logo" className="h-20 py-1" />
           </div>
         </NavLink>
         <div className="flex items-center gap-x-6 font-medium flex-wrap pr-6">

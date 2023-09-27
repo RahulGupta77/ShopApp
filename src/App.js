@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home'
+import Cart from './pages/Cart'
+import NoPageFound from './pages/NoPageFound.jsx'
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='bg-slate-900 max-[600px]:fixed w-screen'>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<NoPageFound />} />
+      </Routes>
     </div>
   );
 }
